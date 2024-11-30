@@ -2149,9 +2149,9 @@ export default function Form() {
                   content: "'🔥 الأكثر طلبا'",
                   width: "100%",
                   position: "absolute",
-                  bottom: "-25px",
+                  bottom: "-28px",
 
-                  left: "52%",
+                  left: "50%",
                   transform: "translateX(-50%)",
                   fontSize: "14px",
                   color: "red",
