@@ -1856,18 +1856,19 @@ export default function Form() {
         localStorage.removeItem("makeOrder");
       }
     }
-  }, [isMakeOrder]);
-
-  const handleSubmitOrder = async (e) => {
-    e.preventDefault();
-
-    setBtnDisebled(true);
     if (isMakeOrder?.value === 2) {
       setTimeout(() => {
         setPurchaise(true);
       }, 1200);
       return;
     }
+  }, [isMakeOrder]);
+
+  const handleSubmitOrder = async (e) => {
+    e.preventDefault();
+
+    setBtnDisebled(true);
+
     try {
       const data = new FormData();
       data.append(
@@ -2150,11 +2151,21 @@ export default function Form() {
                   width: "100%",
                   position: "absolute",
                   bottom: "-28px",
-
+                  scale: "1",
                   left: "50%",
                   transform: "translateX(-50%)",
                   fontSize: "14px",
                   color: "red",
+                  animation: "scaleAnim 0.5s infinite alternate",
+                  transformOrigin: "center",
+                  "@keyframes scaleAnim": {
+                    from: {
+                      scale: "1",
+                    },
+                    to: {
+                      scale: "1.1",
+                    },
+                  },
                 },
               }}
             >
