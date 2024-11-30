@@ -2153,7 +2153,7 @@ export default function Form() {
 
                   left: "52%",
                   transform: "translateX(-50%)",
-                  fontSize: "16px",
+                  fontSize: "14px",
                   color: "red",
                 },
               }}
