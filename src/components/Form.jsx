@@ -1849,13 +1849,14 @@ export default function Form() {
     e.target.classList.toggle("valid");
   };
   const isMakeOrder = JSON.parse(localStorage.getItem("makeOrder"));
+
   useEffect(() => {
     if (isMakeOrder) {
       if (isMakeOrder.expire < new Date().getTime()) {
         localStorage.removeItem("makeOrder");
       }
     }
-  }, []);
+  }, [isMakeOrder]);
 
   const handleSubmitOrder = async (e) => {
     e.preventDefault();
