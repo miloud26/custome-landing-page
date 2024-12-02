@@ -1,6 +1,5 @@
 import { Box, Divider, Rating, Typography } from "@mui/material";
 import Form from "./components/Form";
-import Review from "./components/Reviwes";
 
 function App() {
   return (
@@ -85,7 +84,7 @@ function App() {
                 color: "rgb(135 96 161)",
               }}
             >
-              3700
+              3900
             </Typography>
           </Box>
           <Form />
@@ -99,7 +98,6 @@ function App() {
                 style={{ margin: "8px 0", width: "100%", objectFit: "cover" }}
               />
             </Box>
-            <Review />
           </Box>
         </Box>
 

@@ -2060,7 +2060,7 @@ export default function Form() {
                 {"سعر المنتج"}
               </Typography>
               <Typography sx={{ fontWeight: "bold", fontSize: "22px" }}>
-                {3700} دج
+                {3900} دج
               </Typography>
             </Box>
             <Box
@@ -2114,7 +2114,7 @@ export default function Form() {
                 id="total"
                 sx={{ fontWeight: "bold", fontSize: "22px" }}
               >
-                {quantity === 1 ? +quantity * 3700 + 600 : +quantity * 3700} دج
+                {quantity === 1 ? +quantity * 3900 + 600 : +quantity * 3900} دج
               </Typography>
             </Box>
           </Box>
