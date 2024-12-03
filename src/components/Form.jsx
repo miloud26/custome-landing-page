@@ -1955,6 +1955,15 @@ export default function Form() {
             شكرا لك
           </Typography>
         </Box>
+      ) : fakeBtn ? (
+        <Box margin={"50px 0"}>
+          <Typography sx={{ fontSize: "32px", textAlign: "center" }}>
+            {` غير متوفر الآن ${wilaya}  التوصيل لولايتك `}
+          </Typography>
+          <Typography sx={{ fontSize: "32px", textAlign: "center" }}>
+            نرجوا المعذرة و شكرا
+          </Typography>
+        </Box>
       ) : (
         <form
           style={{
@@ -2080,7 +2089,7 @@ export default function Form() {
                 {"سعر المنتج"}
               </Typography>
               <Typography sx={{ fontWeight: "bold", fontSize: "22px" }}>
-                {3900} دج
+                {3700} دج
               </Typography>
             </Box>
             <Box
@@ -2134,7 +2143,7 @@ export default function Form() {
                 id="total"
                 sx={{ fontWeight: "bold", fontSize: "22px" }}
               >
-                {quantity === 1 ? +quantity * 3900 + 600 : +quantity * 3900} دج
+                {quantity === 1 ? +quantity * 3700 + 600 : +quantity * 3700} دج
               </Typography>
             </Box>
           </Box>
@@ -2319,42 +2328,23 @@ export default function Form() {
               alignItems: "center",
             }}
           >
-            {fakeBtn ? (
-              <Button
-                sx={{
-                  fontWeight: "bold",
-                  width: "55%",
-                  margin: "8px 2px",
-                  color: "#000",
+            <Button
+              disabled={btnDisebled}
+              sx={{
+                fontWeight: "bold",
+                width: "55%",
+                margin: "8px 2px",
+                color: "#000",
+                backgroundColor: "#dbeafe",
+                "&:hover": {
                   backgroundColor: "#dbeafe",
-                  "&:hover": {
-                    backgroundColor: "#dbeafe",
-                  },
-                }}
-                variant="contained"
-                onClick={() => setPurchaise(true)}
-              >
-                {"اشتري الان"}
-              </Button>
-            ) : (
-              <Button
-                disabled={btnDisebled}
-                sx={{
-                  fontWeight: "bold",
-                  width: "55%",
-                  margin: "8px 2px",
-                  color: "#000",
-                  backgroundColor: "#dbeafe",
-                  "&:hover": {
-                    backgroundColor: "#dbeafe",
-                  },
-                }}
-                variant="contained"
-                type="submit"
-              >
-                {"اشتري الان"}
-              </Button>
-            )}
+                },
+              }}
+              variant="contained"
+              type="submit"
+            >
+              {"اشتري الان"}
+            </Button>
             <Box
               sx={{
                 width: "45%",

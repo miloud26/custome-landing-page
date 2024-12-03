@@ -84,7 +84,7 @@ function App() {
                 color: "rgb(135 96 161)",
               }}
             >
-              3900
+              3700
             </Typography>
           </Box>
           <Form />
