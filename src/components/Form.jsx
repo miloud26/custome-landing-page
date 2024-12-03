@@ -1840,6 +1840,7 @@ export default function Form() {
   const [quantity, setQuantity] = useState(1);
   const [modelColr, setModelColr] = useState("");
   const [modelSize, setModelSize] = useState("");
+  const [fakeBtn, setFakeBtn] = useState(false);
 
   const communeInfo = Object.values(
     wilayaCommuneInfo.filter((item) => item.name === wilaya)[0]
@@ -1863,6 +1864,25 @@ export default function Form() {
       return;
     }
   }, [isMakeOrder]);
+  useEffect(() => {
+    if (
+      wilaya === "Adrar" ||
+      wilaya === "Bechar" ||
+      wilaya === "Tamanrasset" ||
+      wilaya === "Illizi" ||
+      wilaya === "Tindouf" ||
+      wilaya === "Timimoun" ||
+      wilaya === "Bordj Badji Mokhtar" ||
+      wilaya === "Beni Abbes" ||
+      wilaya === "In Salah" ||
+      wilaya === "In Guezzam" ||
+      wilaya === "Touggourt" ||
+      wilaya === "Djanet" ||
+      wilaya === "El Meniaa"
+    ) {
+      setFakeBtn(true);
+    }
+  }, [wilaya]);
 
   const handleSubmitOrder = async (e) => {
     e.preventDefault();
@@ -2299,23 +2319,42 @@ export default function Form() {
               alignItems: "center",
             }}
           >
-            <Button
-              disabled={btnDisebled}
-              sx={{
-                fontWeight: "bold",
-                width: "55%",
-                margin: "8px 2px",
-                color: "#000",
-                backgroundColor: "#dbeafe",
-                "&:hover": {
+            {fakeBtn ? (
+              <Button
+                sx={{
+                  fontWeight: "bold",
+                  width: "55%",
+                  margin: "8px 2px",
+                  color: "#000",
                   backgroundColor: "#dbeafe",
-                },
-              }}
-              variant="contained"
-              type="submit"
-            >
-              {"اشتري الان"}
-            </Button>
+                  "&:hover": {
+                    backgroundColor: "#dbeafe",
+                  },
+                }}
+                variant="contained"
+                onClick={() => setPurchaise(true)}
+              >
+                {"اشتري الان"}
+              </Button>
+            ) : (
+              <Button
+                disabled={btnDisebled}
+                sx={{
+                  fontWeight: "bold",
+                  width: "55%",
+                  margin: "8px 2px",
+                  color: "#000",
+                  backgroundColor: "#dbeafe",
+                  "&:hover": {
+                    backgroundColor: "#dbeafe",
+                  },
+                }}
+                variant="contained"
+                type="submit"
+              >
+                {"اشتري الان"}
+              </Button>
+            )}
             <Box
               sx={{
                 width: "45%",
