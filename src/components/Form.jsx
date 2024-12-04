@@ -1835,7 +1835,7 @@ export default function Form({ id }) {
   const [purchaise, setPurchaise] = useState(false);
 
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("0777651022");
   const [wilaya, setWilaya] = useState("");
   const [adress, setAdress] = useState("");
   const [quantity, setQuantity] = useState(1);
@@ -1891,21 +1891,23 @@ export default function Form({ id }) {
 
   const regex = /^[5-7]\d{8}$/;
 
-  const handleSubmitOrder = async (e) => {
-    e.preventDefault();
+  useEffect(() => {
     if (!regex.test(phone.slice(1))) {
       setCorrectNumber(true);
       window.scrollTo({
         top: 500,
         behavior: "smooth", // Smooth scrolling animation
       });
-      console.log(phoneInput.current);
+      setBtnDisebled(true);
       document.querySelector('input[placeholder="رقم الهاتف"]').focus();
-      setTimeout(() => {
-        setCorrectNumber(false);
-      }, 3000);
-      return;
+    } else {
+      setBtnDisebled(false);
+      setCorrectNumber(false);
     }
+  }, [phone]);
+
+  const handleSubmitOrder = async (e) => {
+    e.preventDefault();
 
     setBtnDisebled(true);
 
@@ -2041,7 +2043,7 @@ export default function Form({ id }) {
                   marginBottom: "15px",
                 }}
               >
-                أدخل رقما صحيحا
+                أدخل رقم هاتفك الصحيح
               </Typography>
             ) : (
               ""
