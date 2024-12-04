@@ -2042,7 +2042,7 @@ export default function Form({ id }) {
                   marginBottom: "15px",
                 }}
               >
-                أدخل رقم هاتفك الصحيح
+                أدخل رقم هاتف صحيح{" "}
               </Typography>
             ) : (
               ""
