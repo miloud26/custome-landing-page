@@ -2037,7 +2037,7 @@ export default function Form({ id }) {
                 sx={{
                   marginTop: "-10px",
                   textAlign: "center",
-                  width: "40%",
+                  width: "60%",
                   color: "red",
                   marginBottom: "15px",
                 }}
