@@ -1,7 +1,12 @@
 import { Box, Divider, Rating, Typography } from "@mui/material";
 import Form from "./components/Form";
+import { data } from "./data";
 
 function App() {
+  const id = "l";
+  const { price, name, descImag, themImg } = data.filter(
+    (item) => item?.id === id
+  )[0];
   return (
     <Box>
       <Box
@@ -59,7 +64,7 @@ function App() {
               marginBottom: "8px",
             }}
           >
-            أونصومبل ليكات و سروال
+            {name}
           </Typography>
           <Typography sx={{ marginBottom: "2px", textAlign: "right" }}>
             <Rating value={5} readOnly />
@@ -84,16 +89,16 @@ function App() {
                 color: "rgb(135 96 161)",
               }}
             >
-              3700
+              {price}
             </Typography>
           </Box>
-          <Form />
+          <Form id={id} />
           <Divider />
 
           <Box marginTop={"50px"}>
             <Box marginTop={"50px"} width={"100%"}>
               <img
-                src="https://cdn.shopify.com/s/files/1/0718/9600/6894/files/screencapture-127-0-0-1-5500-index-html-2024-11-03-20_55_24_1_1.webp"
+                src={descImag}
                 alt=""
                 style={{ margin: "8px 0", width: "100%", objectFit: "cover" }}
               />
@@ -117,7 +122,7 @@ function App() {
             <img
               id="mainImg"
               style={{ width: "100%", objectFit: "cover", height: "100%" }}
-              src="https://z1n9ew-h0.myshopify.com/cdn/shop/files/2024-11-18-104612_1.webp?v=1732456469&width=823"
+              src={themImg}
               alt="img"
             />
           </Box>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import {
   Box,
@@ -10,6 +10,7 @@ import {
   MenuItem,
   InputLabel,
 } from "@mui/material";
+import { data } from "../data.js";
 
 const wilayaCommuneInfo = [
   {
@@ -1799,7 +1800,7 @@ const wilayaInfo = wilayaCommuneInfo.map((item) => {
   return { id, name };
 });
 
-export default function Form() {
+export default function Form({ id }) {
   const sendNotification = async (newOrder) => {
     const url = `https://api.telegram.org/bot${"7808946507:AAH0OwNAaL15AAsouO602jhC8qHHU7PcWbE"}/sendMessage`;
 
@@ -1841,6 +1842,10 @@ export default function Form() {
   const [modelColr, setModelColr] = useState("");
   const [modelSize, setModelSize] = useState("");
   const [fakeBtn, setFakeBtn] = useState(false);
+  const [correctNumber, setCorrectNumber] = useState(false);
+  const phoneInput = useRef(null);
+
+  const { clr, size, price } = data.filter((item) => item.id === id)[0];
 
   const communeInfo = Object.values(
     wilayaCommuneInfo.filter((item) => item.name === wilaya)[0]
@@ -1884,8 +1889,23 @@ export default function Form() {
     }
   }, [wilaya]);
 
+  const regex = /^[5-7]\d{8}$/;
+
   const handleSubmitOrder = async (e) => {
     e.preventDefault();
+    if (!regex.test(phone.slice(1))) {
+      setCorrectNumber(true);
+      window.scrollTo({
+        top: 500,
+        behavior: "smooth", // Smooth scrolling animation
+      });
+      console.log(phoneInput.current);
+      document.querySelector('input[placeholder="رقم الهاتف"]').focus();
+      setTimeout(() => {
+        setCorrectNumber(false);
+      }, 3000);
+      return;
+    }
 
     setBtnDisebled(true);
 
@@ -1997,6 +2017,7 @@ export default function Form() {
               onChange={(e) => setName(e.target.value)}
             />
             <TextField
+              ref={phoneInput}
               required
               type="number"
               sx={{
@@ -2010,6 +2031,21 @@ export default function Form() {
               label={"رقم الهاتف"}
               onChange={(e) => setPhone(e.target.value)}
             />
+            {correctNumber ? (
+              <Typography
+                sx={{
+                  marginTop: "-10px",
+                  textAlign: "center",
+                  width: "40%",
+                  color: "red",
+                  marginBottom: "15px",
+                }}
+              >
+                أدخل رقما صحيحا
+              </Typography>
+            ) : (
+              ""
+            )}
           </Box>
           <Box
             sx={{
@@ -2089,7 +2125,7 @@ export default function Form() {
                 {"سعر المنتج"}
               </Typography>
               <Typography sx={{ fontWeight: "bold", fontSize: "22px" }}>
-                {3700} دج
+                {price} دج
               </Typography>
             </Box>
             <Box
@@ -2143,7 +2179,8 @@ export default function Form() {
                 id="total"
                 sx={{ fontWeight: "bold", fontSize: "22px" }}
               >
-                {quantity === 1 ? +quantity * 3700 + 600 : +quantity * 3700} دج
+                {quantity === 1 ? +quantity * price + 600 : +quantity * price}{" "}
+                دج
               </Typography>
             </Box>
           </Box>
@@ -2157,7 +2194,32 @@ export default function Form() {
               gap: "2px",
             }}
           >
-            <Box
+            {clr.map((item) => (
+              <>
+                <Box
+                  onClick={(e) => {
+                    handleModel(e);
+                    setModelColr(item);
+                  }}
+                  sx={{
+                    //backgroundColor: "#f5f5dc",
+                    width: "fit-content",
+                    height: "40px",
+                    marginRight: "4px",
+                    border: "1px red solid",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    fontWeight: "bold",
+                    padding: "20px 30px",
+                    borderRadius: "12px",
+                  }}
+                >
+                  {item}
+                </Box>
+              </>
+            ))}
+            {/* <Box
               onClick={(e) => {
                 handleModel(e);
                 setModelColr("Noir");
@@ -2199,9 +2261,9 @@ export default function Form() {
               }}
             >
               Noir
-            </Box>
+            </Box>*/}
 
-            <Box
+            {/* <Box
               onClick={(e) => {
                 handleModel(e);
                 setModelColr("Marron");
@@ -2221,20 +2283,47 @@ export default function Form() {
               }}
             >
               Marron
-            </Box>
+            </Box>*/}
           </Box>
 
           <Box
             flexDirection={"row"}
             sx={{
-              marginTop: "45px",
+              marginTop: "25px",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               gap: "2px",
             }}
           >
-            <Box
+            {size.map((item) => {
+              return (
+                <>
+                  <Box
+                    onClick={(e) => {
+                      handleModel(e);
+                      setModelSize(item);
+                    }}
+                    sx={{
+                      //backgroundColor: "#f5f5dc",
+                      width: "50px",
+                      height: "50px",
+                      marginRight: "4px",
+                      border: "1px red solid",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      fontWeight: "bold",
+                      padding: "20px 30px",
+                      borderRadius: "12px",
+                    }}
+                  >
+                    {item}
+                  </Box>
+                </>
+              );
+            })}
+            {/*<Box
               onClick={(e) => {
                 handleModel(e);
                 setModelSize("42");
@@ -2318,7 +2407,7 @@ export default function Form() {
               }}
             >
               48
-            </Box>
+            </Box>*/}
           </Box>
           <Box
             sx={{
