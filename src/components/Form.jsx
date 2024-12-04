@@ -1862,7 +1862,7 @@ export default function Form({ id }) {
         localStorage.removeItem("makeOrder");
       }
     }
-    if (isMakeOrder?.value === 2) {
+    if (isMakeOrder?.value === 1) {
       setTimeout(() => {
         setPurchaise(true);
       }, 1200);
@@ -1945,20 +1945,14 @@ export default function Form({ id }) {
         msg: "**New Order Received!**",
       };
 
-      if (isMakeOrder?.value === 1) {
-        localStorage.setItem(
-          "makeOrder",
-          JSON.stringify({ value: 2, expire: isMakeOrder.expire })
-        );
-      } else {
-        localStorage.setItem(
-          "makeOrder",
-          JSON.stringify({
-            value: 1,
-            expire: new Date().getTime() + 27 * 60 * 60 * 1000,
-          })
-        );
-      }
+      localStorage.setItem(
+        "makeOrder",
+        JSON.stringify({
+          value: 1,
+          expire: new Date().getTime() + 27 * 60 * 60 * 1000,
+        })
+      );
+
       sendNotification(newOrder);
     } catch (error) {
       console.log(error);
