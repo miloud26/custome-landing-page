@@ -1889,9 +1889,8 @@ export default function Form({ id }) {
     }
   }, [wilaya]);
 
-  const regex = /^[5-7]\d{8}$/;
-
   useEffect(() => {
+    const regex = /^[5-7]\d{8}$/;
     if (!regex.test(phone.slice(1))) {
       setCorrectNumber(true);
       window.scrollTo({
