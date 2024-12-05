@@ -1865,6 +1865,10 @@ export default function Form({ id }) {
     if (isMakeOrder?.value === 1) {
       setTimeout(() => {
         setPurchaise(true);
+        window.scrollTo({
+          top: 500,
+          behavior: "smooth", // Smooth scrolling animation
+        });
       }, 1200);
       return;
     }
@@ -1941,6 +1945,10 @@ export default function Form({ id }) {
       setBtnDisebled(false);
 
       setPurchaise(true);
+      window.scrollTo({
+        top: 500,
+        behavior: "smooth", // Smooth scrolling animation
+      });
       const newOrder = {
         msg: "**New Order Received!**",
       };
