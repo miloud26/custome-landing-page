@@ -3,7 +3,7 @@ export const data = [
     id: "l",
     name: "أونصومبل ليكات و سروال",
     price: 3700,
-    clr: ["Noir", "Marron"],
+    clr: ["Noir", "Bleu Nuite"],
     size: [42, 44, 46, 48],
     descImag:
       "https://cdn.shopify.com/s/files/1/0718/9600/6894/files/screencapture-127-0-0-1-5500-index-html-2024-11-03-20_55_24_1_1.webp",
