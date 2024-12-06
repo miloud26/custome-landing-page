@@ -1957,7 +1957,7 @@ export default function Form({ id }) {
         "makeOrder",
         JSON.stringify({
           value: 1,
-          expire: new Date().getTime() + 27 * 60 * 60 * 1000,
+          expire: new Date().getTime() + 15 * 60 * 60 * 1000,
         })
       );
 
