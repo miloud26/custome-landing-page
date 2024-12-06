@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 
 const App = lazy(() => import("./App.jsx"));
-const Hijeb = lazy(() => import("./Hijeb.jsx"));
+
+const Licket = lazy(() => import("./Licket.jsx"));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +13,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/products/l" element={<App />} />
-        <Route path="/products/h" element={<Hijeb />} />
+
+        <Route path="/products/h" element={<Licket />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -3,22 +3,22 @@ export const data = [
     id: "l",
     name: "أونصومبل ليكات و سروال",
     price: 3700,
-    clr: ["Noir", "Marron", "Bleu Nuite"],
+    clr: ["Noir", "Marron"],
     size: [42, 44, 46, 48],
     descImag:
-      "https://cdn.shopify.com/s/files/1/0718/9600/6894/files/screencapture-127-0-0-1-5500-index-html-2024-11-03-20_55_24_1_1.webp",
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733505177/marron-noir_p1ssmm.webp",
     themImg:
-      "https://z1n9ew-h0.myshopify.com/cdn/shop/files/2024-11-18-104612_1.webp?v=1732456469&width=823",
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733505194/marron_ba94tl.webp",
   },
   {
     id: "h",
-    name: "حجاب ب ثلاث قطع",
-    price: 7700,
-    clr: ["Noir", "Beige"],
-    size: [40, 42, 44, 46, 48, 50],
+    name: "أونصومبل ليكات و سروال",
+    price: 3900,
+    clr: ["Noir", "Marron", "Bleu Nuit"],
+    size: [42, 44, 46, 48],
     descImag:
-      "https://cdn.shopify.com/s/files/1/0718/9600/6894/files/screencapture-127-0-0-1-5500-index-html-2024-11-03-20_55_24_1_1.webp",
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733504948/screencapture-127-0-0-1-5500-index-html-2024-12-06-18_07_40_ddayqr.webp",
     themImg:
-      "https://z1n9ew-h0.myshopify.com/cdn/shop/files/2024-11-18-104612_1.webp?v=1732456469&width=823",
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733505255/bluei_xzmmbn.webp",
   },
 ];
