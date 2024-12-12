@@ -2,7 +2,7 @@ export const data = [
   {
     id: "l",
     name: "أونصومبل ليكات و سروال",
-    price: 3700,
+    price: 4300,
     clr: ["Noir", "Marron"],
     size: [42, 44, 46, 48],
     descImag:
@@ -13,7 +13,7 @@ export const data = [
   {
     id: "h",
     name: "أونصومبل ليكات و سروال",
-    price: 3900,
+    price: 4300,
     clr: ["Noir", "Marron", "Bleu nuit"],
     size: [42, 44, 46, 48],
     descImag:
@@ -35,7 +35,7 @@ export const data = [
   {
     id: "hih",
     name: "أونصومبل ليكات و سروال",
-    price: 3700,
+    price: 4300,
     clr: ["Noir", "Marron", "Bleu Nuit"],
     size: [42, 44, 46, 48],
     descImag:
