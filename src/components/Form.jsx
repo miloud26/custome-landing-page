@@ -1924,7 +1924,10 @@ export default function Form({ id }) {
       );
       data.append("product", document.getElementById("title")?.innerHTML);
       data.append("name", name);
-      data.append("phone", `${phone}`);
+      data.append(
+        "phone",
+        window.location.pathname.slice(10) === "h" ? `'${phone}` : `${phone}`
+      );
       data.append("wilaya", wilaya);
       data.append("adress", adress);
       data.append("quantity", quantity.toString());
@@ -1966,7 +1969,7 @@ export default function Form({ id }) {
       console.log(error);
     }
   };
-  console.log(window.location.href[window.location.href.length - 1]);
+  //console.log(window.location.href[window.location.href.length - 1]);
 
   return (
     <Box>
