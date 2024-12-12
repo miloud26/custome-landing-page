@@ -2,7 +2,7 @@ export const data = [
   {
     id: "l",
     name: "أونصومبل ليكات و سروال",
-    price: 4300,
+    price: 3700,
     clr: ["Noir", "Marron"],
     size: [42, 44, 46, 48],
     descImag:

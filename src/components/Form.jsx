@@ -2071,6 +2071,7 @@ export default function Form({ id }) {
                 {wilayaInfo.slice(1).map((item, index) => {
                   return (
                     <MenuItem
+                      required
                       sx={{ direction: "ltr" }}
                       key={index}
                       value={item.name}
