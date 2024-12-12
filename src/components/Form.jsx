@@ -1966,6 +1966,7 @@ export default function Form({ id }) {
       console.log(error);
     }
   };
+  console.log(window.location.href[window.location.href.length - 1]);
 
   return (
     <Box>
