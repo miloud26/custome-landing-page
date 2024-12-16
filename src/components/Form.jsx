@@ -1932,10 +1932,7 @@ export default function Form({ id }) {
       data.append("adress", adress);
       data.append("quantity", quantity.toString());
       data.append("model", `${modelColr} / ${modelSize}`);
-      data.append(
-        "prix",
-        document.getElementById("total")?.innerHTML.match(/\d+/)
-      );
+      data.append("prix", `${price} / 600 / ${price + 600}`);
 
       await fetch(
         "https://script.google.com/macros/s/AKfycby3CcCeV5zO6gz9LHK2IobBelVoUv_10w6RM8t2S6hHNfNLMKeqdfaHkfF6xG8xH-b7/exec",
