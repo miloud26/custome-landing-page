@@ -35,7 +35,7 @@ export const data = [
   {
     id: "hih",
     name: "أونصومبل ليكات و سروال",
-    price: 3700,
+    price: 3300,
     clr: ["Noir", "Marron", "Bleu Nuit"],
     size: [42, 44, 46, 48],
     descImag:
@@ -46,7 +46,7 @@ export const data = [
   {
     id: "LicketSeif",
     name: "أونصومبل ليكات و سروال",
-    price: 6900,
+    price: 5900,
     clr: ["Noir", "Vert"],
     size: [42, 44, 46, 48],
     descImag:
