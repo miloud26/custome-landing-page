@@ -2,8 +2,8 @@ import { Box, Divider, Rating, Typography } from "@mui/material";
 import Form from "./components/Form";
 import { data } from "./data";
 
-function LicketSeif() {
-  const id = "LicketSeif";
+function Licket01() {
+  const id = "l-1";
   const { price, name, descImag, themImg } = data.filter(
     (item) => item?.id === id
   )[0];
@@ -132,4 +132,4 @@ function LicketSeif() {
   );
 }
 
-export default LicketSeif;
+export default Licket01;

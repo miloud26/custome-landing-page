@@ -1845,7 +1845,9 @@ export default function Form({ id }) {
   const [correctNumber, setCorrectNumber] = useState(false);
   const phoneInput = useRef(null);
 
-  const { clr, size, price } = data.filter((item) => item.id === id)[0];
+  const { clr, size, price, delevery } = data.filter(
+    (item) => item.id === id
+  )[0];
 
   const communeInfo = Object.values(
     wilayaCommuneInfo.filter((item) => item.name === wilaya)[0]
@@ -1924,15 +1926,12 @@ export default function Form({ id }) {
       );
       data.append("product", document.getElementById("title")?.innerHTML);
       data.append("name", name);
-      data.append(
-        "phone",
-        window.location.pathname.slice(10) === "h" ? `'${phone}` : `${phone}`
-      );
+      data.append("phone", `${phone}`);
       data.append("wilaya", wilaya);
       data.append("adress", adress);
       data.append("quantity", quantity.toString());
       data.append("model", `${modelColr} / ${modelSize}`);
-      data.append("prix", `${price} / 0 / ${price + 0}`);
+      data.append("prix", `${price} / ${delevery} / ${price + delevery}`);
 
       await fetch(
         "https://script.google.com/macros/s/AKfycby3CcCeV5zO6gz9LHK2IobBelVoUv_10w6RM8t2S6hHNfNLMKeqdfaHkfF6xG8xH-b7/exec",
@@ -2165,7 +2164,7 @@ export default function Form({ id }) {
                 id="priceDelevery"
                 sx={{ fontWeight: "bold", fontSize: "22px" }}
               >
-                {quantity === 1 ? 0 : 0} دج
+                {quantity === 1 ? delevery : 0} دج
               </Typography>
             </Box>
             <Box
@@ -2184,7 +2183,10 @@ export default function Form({ id }) {
                 id="total"
                 sx={{ fontWeight: "bold", fontSize: "22px" }}
               >
-                {quantity === 1 ? +quantity * price + 0 : +quantity * price} دج
+                {quantity === 1
+                  ? +quantity * price + delevery
+                  : +quantity * price}{" "}
+                دج
               </Typography>
             </Box>
           </Box>
