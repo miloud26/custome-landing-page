@@ -5,6 +5,7 @@ import "./index.css";
 
 const Licket01 = lazy(() => import("./Licket01.jsx"));
 const Licket02 = lazy(() => import("./Licket02.jsx"));
+const AddOrder = lazy(() => import("./AddOrder.jsx"));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/products/licket01" element={<Licket01 />} />
         <Route path="/products/licket02" element={<Licket02 />} />
+        <Route path="/addorder" element={<AddOrder />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
