@@ -1836,6 +1836,7 @@ export default function AddOrder() {
   const [modelSize, setModelSize] = useState("");
   const [price, setPrice] = useState("");
   const [remerk, setRemerk] = useState("");
+  const [btnShow, setBtnShow] = useState(false);
 
   const deletData = () => {
     setName("");
@@ -1846,6 +1847,7 @@ export default function AddOrder() {
     setModelSize("");
     setAdress("");
     setWilaya("");
+    setBtnShow(false);
   };
 
   const communeInfo = Object.values(
@@ -1854,6 +1856,7 @@ export default function AddOrder() {
 
   const handleSubmitOrder = async (e) => {
     e.preventDefault();
+    setBtnShow(true);
 
     try {
       const data = new FormData();
@@ -2094,6 +2097,7 @@ export default function AddOrder() {
           }}
         >
           <Button
+            disabled={btnShow}
             sx={{
               fontWeight: "bold",
 
