@@ -2312,7 +2312,7 @@ export default function Form({ id }) {
                     }}
                     sx={{
                       //backgroundColor: "#f5f5dc",
-                      width: "50px",
+                      width: "fit-content",
                       height: "50px",
                       marginRight: "4px",
                       border: "1px red solid",
