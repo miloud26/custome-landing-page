@@ -2320,7 +2320,7 @@ export default function Form({ id }) {
                       justifyContent: "center",
                       alignItems: "center",
                       fontWeight: "bold",
-                      padding: "10px 15px",
+                      padding: "8px 13px",
                       borderRadius: "12px",
                     }}
                   >
