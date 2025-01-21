@@ -20,7 +20,7 @@ export const data = [
     price: 7900,
     delevery: 600,
     clr: ["Noir", "Beige"],
-    size: ["T1(38/40/42)", "T1(44/46/48)"],
+    size: ["T1(38/40/42)", "T2(44/46/48)"],
     descImag:
       "https://res.cloudinary.com/dsqon0kae/image/upload/v1737483340/screencapture-127-0-0-1-5500-index-html-2025-01-21-19_10_33_qngwdt.webp",
     themImg:
