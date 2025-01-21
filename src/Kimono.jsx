@@ -2,7 +2,7 @@ import { Box, Divider, Rating, Typography } from "@mui/material";
 import Form from "./components/Form";
 import { data } from "./data";
 
-function Licket02() {
+function Kimono() {
   const id = "l-2";
   const { price, name, descImag, themImg } = data.filter(
     (item) => item?.id === id
@@ -132,4 +132,4 @@ function Licket02() {
   );
 }
 
-export default Licket02;
+export default Kimono;
