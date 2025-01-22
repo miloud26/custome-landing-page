@@ -4,7 +4,7 @@ export const data = [
     name: "أونصومبل ليكات و سروال",
     price: 2900,
     delevery: 600,
-    clr: ["Noir", "Marron", "Bleu nuit"],
+    clr: ["Noir", "Marron"],
     size: [42, 44, 46, 48],
     /*descImag:
       "https://res.cloudinary.com/dsqon0kae/image/upload/v1733504948/screencapture-127-0-0-1-5500-index-html-2024-12-06-18_07_40_ddayqr.webp",
