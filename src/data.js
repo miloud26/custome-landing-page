@@ -18,7 +18,7 @@ export const data = [
   {
     id: "l-2",
     name: "عباءة + كيمونو عصري",
-    price: 7900,
+    price: 6700,
     delevery: 600,
     clr: ["Noir", "Beige"],
     size: ["T1(38/40/42)", "T2(44/46/48)"],
