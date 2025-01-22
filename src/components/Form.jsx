@@ -1949,7 +1949,7 @@ export default function Form({ id }) {
         behavior: "smooth", // Smooth scrolling animation
       });
       const newOrder = {
-        msg: "**New Order Received!**",
+        msg: `*New Order Received!* ${price + delevery}`,
       };
 
       localStorage.setItem(
