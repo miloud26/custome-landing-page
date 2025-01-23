@@ -27,4 +27,16 @@ export const data = [
     themImg:
       "https://res.cloudinary.com/dsqon0kae/image/upload/v1737483340/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-21_191256_dbcyvi.webp",
   },
+  {
+    id: "l-3",
+    name: "ليكات ربيعية أنيقة",
+    price: 5300,
+    delevery: 600,
+    clr: ["Beige"],
+    size: [38, 40, 42, 44, 46, 48],
+    descImag:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737600815/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-23_035231_cwrfav.webp",
+    themImg:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737600868/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-23_035357_ouahtm.webp",
+  },
 ];
