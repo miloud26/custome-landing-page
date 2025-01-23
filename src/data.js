@@ -30,7 +30,7 @@ export const data = [
   {
     id: "l-3",
     name: "ليكات ربيعية أنيقة",
-    price: 5300,
+    price: 4300,
     delevery: 600,
     clr: ["Beige"],
     size: [38, 40, 42, 44, 46, 48],
