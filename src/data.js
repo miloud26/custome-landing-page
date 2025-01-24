@@ -39,4 +39,17 @@ export const data = [
     themImg:
       "https://res.cloudinary.com/dsqon0kae/image/upload/v1737600868/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-23_035357_ouahtm.webp",
   },
+  //licket noir
+  {
+    id: "l-4",
+    name: "ليكات ربيعية أنيقة",
+    price: 2900,
+    delevery: 600,
+    clr: ["Noir"],
+    size: [42, 44, 46, 48],
+    descImag:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737698519/screencapture-127-0-0-1-5500-index-html-2025-01-24-06_25_03_2_1_fpeebb.jpg",
+    themImg:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737698539/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-24_062415_f9axv5.webp",
+  },
 ];
