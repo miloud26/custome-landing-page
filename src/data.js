@@ -42,7 +42,7 @@ export const data = [
   //licket noir
   {
     id: "l-4",
-    name: "ليكات ربيعية أنيقة",
+    name: "أونصومبل ليكات و سروال",
     price: 2900,
     delevery: 600,
     clr: ["Noir"],
