@@ -15,7 +15,7 @@ export const data = [
   
   {
     id: "l-2",
-    name: "حامل الهاتف 360 درجة",
+    name: "سبورة جدارية لاصقة",
     price: 2600,
     delevery: 600,
     clr: [],
