@@ -1,55 +1,30 @@
 export const data = [
   {
     id: "l-1",
-    name: "أونصومبل ليكات و سروال",
+    name: "حامل الهاتف 360 درجة",
     price: 2900,
     delevery: 600,
-    clr: ["Bleu Nuit", "Marron"],
-    size: [42, 44],
+    clr: [],
+    size: [],
     descImag:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733504494/screencapture-127-0-0-1-5500-index-html-2024-12-06-17_41_27_1_hinua2.webp",
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1753579144/ELECTRONEQUE_1_qcoens.webp",
     themImg:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733505255/bluei_xzmmbn.webp",
-    /* descImag:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733505177/marron-noir_p1ssmm.webp",
-    themImg:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1733505194/marron_ba94tl.webp",*/
+      "https://ae-pic-a1.aliexpress-media.com/kf/S0c0e038415064e7190d1b40ee5b67e07N.jpg_960x960q75.jpg_.avif",
+
   },
+  
   {
     id: "l-2",
-    name: "عباءة + كيمونو عصري",
-    price: 6700,
+    name: "حامل الهاتف 360 درجة",
+    price: 2600,
     delevery: 600,
-    clr: ["Noir", "Beige"],
-    size: ["T1(38/40/42)", "T2(44/46/48)"],
+    clr: [],
+    size: [],
     descImag:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737483340/screencapture-127-0-0-1-5500-index-html-2025-01-21-19_10_33_qngwdt.webp",
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1753581227/ELECTRONEQUE_2_ltfxvl.webp",
     themImg:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737483340/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-21_191256_dbcyvi.webp",
+      "https://ae-pic-a1.aliexpress-media.com/kf/S3282e31410fc4d279b508682c1caad6da.jpg_960x960q75.jpg_.avif",
+
   },
-  {
-    id: "l-3",
-    name: "ليكات ربيعية أنيقة",
-    price: 3700,
-    delevery: 600,
-    clr: ["Beige"],
-    size: [38, 40, 42, 44, 46, 48],
-    descImag:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737600815/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-23_035231_cwrfav.webp",
-    themImg:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737600868/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-23_035357_ouahtm.webp",
-  },
-  //licket noir
-  {
-    id: "l-4",
-    name: "أونصومبل ليكات و سروال",
-    price: 2900,
-    delevery: 600,
-    clr: ["Noir"],
-    size: [42, 44, 46, 48],
-    descImag:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737698519/screencapture-127-0-0-1-5500-index-html-2025-01-24-06_25_03_2_1_fpeebb.jpg",
-    themImg:
-      "https://res.cloudinary.com/dsqon0kae/image/upload/v1737698539/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-01-24_062415_f9axv5.webp",
-  },
+  
 ];

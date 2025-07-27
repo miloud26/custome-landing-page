@@ -2,8 +2,8 @@ import { Box, Divider, Rating, Typography } from "@mui/material";
 import Form from "./components/Form";
 import { data } from "./data";
 
-function LicketNoir() {
-  const id = "l-4";
+function Support() {
+  const id = "l-1";
   const { price, name, descImag, themImg } = data.filter(
     (item) => item?.id === id
   )[0];
@@ -18,7 +18,7 @@ function LicketNoir() {
           color: "white",
         }}
       >
-        مرحبا بكم في متجر جواهر
+        مرحبا بكم في متجر مانورا شوب
       </Box>
 
       <Divider />
@@ -132,4 +132,4 @@ function LicketNoir() {
   );
 }
 
-export default LicketNoir;
+export default Support;
