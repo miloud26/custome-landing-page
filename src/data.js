@@ -26,5 +26,18 @@ export const data = [
       "https://ae-pic-a1.aliexpress-media.com/kf/S3282e31410fc4d279b508682c1caad6da.jpg_960x960q75.jpg_.avif",
 
   },
+  {
+    id: "l-3",
+    name: "مقعد السيارة الآمن للأطفال",
+    price: 3700,
+    delevery: 600,
+    clr: ["Rouge", "Gris"],
+    size: [],
+    descImag:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1753761810/ELECTRONEQUE_4_dkzbkc.webp",
+    themImg:
+      "https://shopidy-dz.com/cdn/shop/files/siegebebe_3.webp?v=1751774893&width=823",
+
+  },
   
 ];
