@@ -16,8 +16,8 @@ export const data = [
   {
     id: "l-2",
     name: "سبورة جدارية لاصقة",
-    price: 2100,
-    delevery: 500,
+    price: 1900,
+    delevery: 600,
     clr: [],
     size: [],
     descImag:
