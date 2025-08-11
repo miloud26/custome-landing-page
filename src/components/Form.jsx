@@ -1968,7 +1968,10 @@ export default function Form({ id }) {
   //console.log(window.location.href[window.location.href.length - 1]);
 
   localStorage.setItem('baseURL', window.location.pathname)
-
+ useEffect(() => {
+    setBtnDisebled(true);
+ 
+  }, []);
   return (
     <Box>
       {purchaise ? (
