@@ -39,5 +39,18 @@ export const data = [
       "https://shopidy-dz.com/cdn/shop/files/siegebebe_3.webp?v=1751774893&width=823",
 
   },
+  {
+    id: "l-4",
+    name: "مشروب علاج البروستات و التهابات المسالك البولية",
+    price: 2400,
+    delevery: 500,
+    clr: [],
+    size: [],
+    descImag:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1753761810/ELECTRONEQUE_4_dkzbkc.webp",
+    themImg:
+      "https://shopidy-dz.com/cdn/shop/files/siegebebe_3.webp?v=1751774893&width=823",
+
+  },
   
 ];
