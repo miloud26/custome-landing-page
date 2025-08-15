@@ -1,6 +1,7 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import React, { lazy, useEffect, startTransition, Suspense } from "react";
 import Prostat from "./Prostat.jsx";
+import Lalim from "./Lalim.jsx";
 
 const Support = lazy(() => import("./Support.jsx"));
 const Board = lazy(() => import("./Board.jsx"));
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/products/board" element={<Board />} />
         <Route path="/products/siege" element={<Siege />} />
         <Route path="/products/prostat" element={<Prostat />} />
+        <Route path="/products/lalim" element={<Lalim />} />
         <Route path="/addorder" element={<AddOrder />} />
       </Routes>
     </Suspense>

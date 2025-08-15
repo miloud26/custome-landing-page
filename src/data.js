@@ -48,4 +48,16 @@ export const data = [
     themImg:
       "https://res.cloudinary.com/dsqon0kae/image/upload/v1755036900/%D9%84%D9%82%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9_2025-08-12_230647_gfnfoh.png",
   },
+  {
+    id: "l-5",
+    name: "⚡ شاحن سيارة الذكي 4×1",
+    price: 3400,
+    delevery: 500,
+    clr: [],
+    size: [],
+    descImag:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1755282404/ELECTRONEQUE_6_tlhhhw.webp",
+    themImg:
+      "https://res.cloudinary.com/dsqon0kae/image/upload/v1755282407/hf1GIiEs9v7SITsx146kS-1753796625612_hft5ou.webp",
+  },
 ];
